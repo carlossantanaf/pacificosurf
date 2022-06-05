@@ -1,0 +1,133 @@
+.stage-dois {
+  max-width: 1200px;
+  margin: 3.7rem auto 7.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.8rem;
+  align-items: center;
+  padding: 2rem;
+}
+.stage-dois > div > span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0788D9;
+}
+.stage-dois > div > h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  max-width: 25ch;
+  margin-top: 1rem;
+}
+.stage-dois > div > p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3.7rem;
+}
+.stage-dois > div > a {
+  text-decoration: underline;
+  color: #0788D9;
+  font-size: 2rem;
+  font-style: italic;
+  transition: .3s;
+}
+.stage-dois > div > a:hover {
+  color: black;
+}
+
+@media(max-width: 1000px) {
+  .stage-dois > div > span {
+    font-size: 1.5rem;
+  }
+  .stage-dois > div > h2 {
+    font-size: 2.5rem;
+  }
+  .stage-dois > div > p {
+    font-size: 1.5rem;
+  }
+  .stage-dois > div > a {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 1000px) {
+  .stage-dois > div > h2 {
+    font-size: 2rem;
+  }
+  .stage-dois > div > p {
+    font-size: 1.3rem;
+  }
+  .stage-dois > div > a {
+    font-size: 1.5rem;
+  }
+  .stage-dois {
+    gap: 2rem;
+  }
+}
+
+@media(max-width: 700px) {
+  .stage-dois > div > h2 {
+    font-size: 2rem;
+  }
+  .stage-dois > div > a {
+    font-size: 1.5rem;
+  }
+  .stage-dois {
+    gap: 0.5rem;
+  }
+  .stage-dois > div > p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media(max-width: 600px) {
+  .stage-dois > div > h2 {
+    font-size: 1.5rem;
+  }
+  .stage-dois > div > a {
+    font-size: 1.3rem;
+  }
+  .stage-dois {
+    gap: 0.5rem;
+  }
+  .stage-dois > div > p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media(max-width: 500px) {
+  .stage-dois > div > h2 {
+    font-size: 1.2rem;
+  }
+  .stage-dois > div > a {
+    font-size: 1.2rem;
+  }
+  .stage-dois {
+    gap: 0.5rem;
+  }
+  .stage-dois > div > p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media(max-width: 450px) {
+  .stage-dois {
+  padding: 1rem;
+  }
+  .stage-dois > div > p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .stage-dois > div > span {
+    font-size: 1.2rem;
+  }
+  .stage-dois > div > h2 {
+    margin-top: 0.5rem;
+  }
+  .stage-dois > div > a {
+    font-size: 1rem;
+  }
+}
