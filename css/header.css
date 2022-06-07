@@ -47,7 +47,7 @@ transition: .3s;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding:1rem 1rem 5rem 1rem;
 }
 .main > h1 {
   font-size: 3rem;
@@ -111,22 +111,40 @@ transition: .3s;
   .header > ul {
     flex-direction: column;
     gap: 1rem;
-    position: absolute;
     right: 0;
-    top: -1000px;
+    top: 1000px;
+    opacity: 0;
     padding-top: 2rem;
     background-color: white;
     height: 100vh;
-    z-index: -1;
+    z-index: 1;
+    position: fixed;
+  }
+  .header > ul li + li {
+    margin-top: 1rem;
+  }
+  .menuR.ativo {
+    transition: ease .3s;
+    opacity: 1;
+    top: 80px;
+  }
+  .menuR {
+    transition: ease .3s;
+
   }
   .open {
     display: initial;
     
   }
   .header {
-    position: relative;
     background-color: white;
     margin-bottom: 5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .main-bg {
+    margin-top: 100px;
   }
 }
 @media(max-width: 400px) {
