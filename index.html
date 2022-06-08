@@ -15,7 +15,7 @@
    
     <div class="header">
       <img src="./img/Group 3.png" alt="Pacífico
-       Surf">
+       Surf" class="logo">
        <ul class="menuR">
          <li>
           <a href="#fireBall">FireBall</a>
@@ -29,9 +29,9 @@
        </ul>
        <div class="resp">
          <span><a href="">71 99999-9999</a></span>
-         <img src="./img/menuOpen.svg" alt="open" class="open">
-         <img src="./img/menuClosa.svg" alt="close" class="close">
-       </div>
+        <img src="./img/menuOpen.svg"  class="open">
+        <img src="./img/menuClosa.svg"  class="close">
+      </div>
     </div>
     <main class="main-bg">
       <video autoplay loop muted plays-inline class="video-bg">
@@ -65,9 +65,38 @@
     </div>
   </section>
 
-  <section>
-
+  <section class="produtos">
+    <article class="fireBall-bg">
+      <div class="fireBall">
+        <h2>PRANCHAS</h2>
+        <div class="fireBall-conteudo">
+          <h3>FireBall</h3>
+          <p>
+            A FireBall é uma prancha com o foco para atletas intermediário e avançado. Por conta de seu design e ajuste na sua criação, a prancha FireBall não perde velocidade e estabilidade durante as manobras. Uma ótima opção para ondas de todos países.
+          </p>
+          <a href="./">Encomendar</a>
+        </div>
+        <div class="fireBall-img">
+          <h3>FireBall</h3>
+          <img src="./pranchas/firevertical.png" alt="Prancha Fire Ball" class="fireV pran">
+          <img src="./pranchas/firedeitada.png" alt="Prancha Fire Ball" class="fireDeitada pran">
+          <div class="escolhas">
+            <img src="./pranchas/fireciculoum.png" class="circuloUm">
+            <img src="./pranchas/fireciculodois.png" class="circuloDois">
+          </div>
+        </div>
+      </div>
+    </article>
   </section>
+  <script type="text/javascript" src="./javascript/vanilla-tilt.js"></script>
   <script type="module" src="./script.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".pran"),{
+		max: 25,
+		speed: 400,
+    glare: true,
+    "max-glare": 1,
+	});
+  </script>
 </body>
 </html>

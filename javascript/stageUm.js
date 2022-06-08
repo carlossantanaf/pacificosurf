@@ -1,33 +1,27 @@
 export default function stageUm() {
-  const celular = window.matchMedia('(max-width: 600px)');
   const open = document.querySelector('.open')
   const close = document.querySelector('.close')
   const menu = document.querySelector('.menuR')
-  if(celular.matches) {
 
-    function openCLick() {
-      menu.classList.add('ativo')
-      this.style.display = 'none'
-      close.style.display = 'initial'
-    }
-  open.classList.contains
-    function closeCLick() {
-      menu.classList.remove('ativo')
-      open.style.display = 'initial'
-      close.style.display = 'none'
-    }
-
-    function windowClick(event) {
-      if((event.target.classList.contains('menuR') || event.target.classList.contains('close') || event.target.classList.contains('open')) === false && close.style.display === 'initial'){
-        closeCLick()
-      }
-      console.log(event.target)
-    }
-
-    open.addEventListener('click', openCLick)
-    close.addEventListener('click', closeCLick)
-    window.addEventListener('click', windowClick)
-  } else {
-    
+  function openMenu () {
+    menu.classList.add('ativo')
+    open.classList.add('none')
+    close.classList.add('initial')
   }
+
+  function closeMenu() {
+    menu.classList.remove('ativo')
+    close.classList.remove('initial')
+    open.classList.remove('none')
+  }
+
+  function closeTarget({target}) {
+    if((target.classList.contains('menuR') || target.classList.contains('close') || target.classList.contains('open') || target.classList.contains('header') || target.classList.contains('logo')) === false && close.classList.contains('initial')) {
+      closeMenu()
+    }
+ 
+  }
+  open.addEventListener('click', openMenu)
+  close.addEventListener('click', closeMenu)
+  window.addEventListener('click', closeTarget)
 };
