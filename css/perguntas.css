@@ -1,0 +1,15 @@
+.perguntas {
+  max-width: 1200px;
+  margin: 2rem auto 4rem auto;
+  padding: 1rem;
+  padding-top: 25rem;
+  background-image: url(../img/perguntas.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  
+}
+.perguntas-bg {
+background-color: #232426;
+
+}
