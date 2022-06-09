@@ -1,0 +1,58 @@
+.clientes {
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+.clientes-carro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 500px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.clientes-carro img {
+  width: 500px;
+  height: 600px;
+  transition: ease .3s;
+}
+
+.clientes > h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+
+}
+.bolas {
+  position: absolute;
+  right: 22%;
+  top: 43%;
+}
+.bola + .bola {
+  margin-top: 1rem;
+}
+.bola {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #402A22;
+  cursor: pointer;
+}
+.bola:hover {
+  background-color: #0C0908;
+  transform:scale3d(1.05, 1.05, 1.05);
+  transition: ease .3s;
+}
+.bola.ativo {
+  background-color: #0C0908;
+  transform:scale3d(1.05, 1.05, 1.05);
+  transition: ease .3s;
+  height: 50px;
+  border-radius: 45%;
+}

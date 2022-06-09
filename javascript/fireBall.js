@@ -1,4 +1,5 @@
 export default function fireBall() {
+
   const circuloUm = document.querySelector('.circuloUm')
   const circuloDois = document.querySelector('.circuloDois')
   const fireVertical = document.querySelector('.fireV')
@@ -7,17 +8,25 @@ export default function fireBall() {
 
   function focoUm() {
     this.classList.add('selected')
-    fireVertical.style.display = 'initial'
+    setTimeout(() => {
+      fireDeitada.style.display = 'none'
+      fireVertical.style.display = 'initial'
+    },200)
     circuloDois.classList.remove('selected')
-    fireVertical.classList.add('opacity')
-    fireDeitada.style.display = 'none'
+    fireVertical.style.opacity = 1;
+    fireDeitada.style.opacity = 0;
   }
   function focoDois() {
     this.classList.add('selected')
     circuloUm.classList.remove('selected')
-    fireVertical.style.display = 'none'
-    fireDeitada.style.display = 'initial'
+    setTimeout(() => {
+      fireVertical.style.display = 'none'
+      fireDeitada.style.display = 'initial'
+    },200)   
+    fireVertical.style.opacity = 0;
+    fireDeitada.style.opacity = 1;
   }
  circuloUm.addEventListener('click', focoUm)
  circuloDois.addEventListener('click', focoDois)
+ 
 }

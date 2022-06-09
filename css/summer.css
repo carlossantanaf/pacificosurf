@@ -1,11 +1,12 @@
-.fireBall-bg {
+.summer-bg {
   background: linear-gradient(#111111, #402A22);
 }
 
-.fireBall {
+.summer {
   max-width: 1200px;
-  margin: 3.7rem auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 2rem;
+  padding-top: 10rem;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,34 +15,34 @@
   position: relative;
   z-index: 0;
 }
-.fireBall > h2 {
+.summer > h2 {
   font-size: 3rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
   grid-column: 1 / 3;
   text-align: center;
 }
-.fireBall-img > h3 {
+.summer-img > h3 {
   display: none;
 }
-.fireBall-conteudo {
+.summer-conteudo {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.fireBall-conteudo > h3,
-.fireBall-img > h3 {
+.summer-conteudo > h3,
+.summer-img > h3 {
   font-size: 2.5rem; 
   align-self: flex-start;
 }
-.fireBall-conteudo > p {
+.summer-conteudo > p {
   font-size: 2.5rem;
   font-weight:normal;
   color: #EDEDED;
   max-width: 33ch;
   
 }
-.fireBall-conteudo > a {
+.summer-conteudo > a {
   text-decoration: none;
   color: white;
   border: 4px solid white;
@@ -54,118 +55,117 @@
   padding: .2rem 3rem;
   transition: .3s;
 }
-.fireBall-conteudo > a:hover {
+.summer-conteudo > a:hover {
   background-color: white;
   color: #402A22;
   transform:scale3d(1.05, 1.05, 1.05);
 }
 
-.escolhas {
+.escolhasS {
   display: flex;
   flex-direction: column;
   position: absolute;
   gap: 1rem;
-  top: 25%;
+  top: 20%;
   right: 10%;
 
 }
-.escolhas > img {
+.escolhasS > img {
   cursor: pointer;
   max-width: 80%;
   border: 2px solid transparent;
   border-radius: 50%;
 }
-.escolhas > img:hover {
+.escolhasS > img:hover {
   transform: scale(1.1);
   transition: ease-in-out .3s;
   border: 2px solid white;
 }
-.escolhas > img.selected {
+.escolhasS > img.selected {
   transform: scale(1.1);
   border: 2px solid white;
 }
 
-.fireBall-img {
+.summer-img {
   position: relative;
 }
-.fireDeitada {
+.summerDeitada {
   display: none;
-  opacity: 0;
 }
-.fireDeitada,
-.fireV {
+.summerDeitada,
+.summerV {
   transition: all .3s;
 }
 @media(max-width: 1050px) {
-  .fireBall-conteudo > h3,
-  .fireBall-img > h3 {
+  .summer-conteudo > h3,
+  .summer-img > h3 {
     font-size: 2rem; 
   }
-  .fireBall-conteudo > p {
+  .summer-conteudo > p {
     font-size: 2rem;  
   }
-  .fireBall-conteudo > a {
+  .summer-conteudo > a {
     font-size: 1.5rem;
   }
-  .escolhas {
+  .escolhasS {
     top: 10%;
     right: 7%;
     gap: 0.5rem;
   }
 }
 @media(max-width: 900px) {
-  .escolhas > img {
+  .escolhasS > img {
     max-width: 60%;
   }
-  .escolhas {
+  .escolhasS {
     top: 10%;
     right: 7%;
     gap: 0.5rem;
   }
-  .fireBall-conteudo > h3,
-  .fireBall-img > h3 {
+  .summer-conteudo > h3,
+  .summer-img > h3 {
     font-size: 1.8rem; 
   }
-  .fireBall-conteudo > p {
+  .summer-conteudo > p {
     font-size: 1.8rem;  
   }
-  .fireBall-conteudo > a {
+  .summer-conteudo > a {
     font-size: 1.4rem;
     margin-top: 1rem;
     margin-bottom: 2.5rem;
   }
 }
 @media(max-width: 780px) {
-  .fireBall > h2 {
+  .summer > h2 {
     font-size: 2.5rem;
   }
-  .fireBall-conteudo > h3,
-  .fireBall-img > h3 {
+  .summer-conteudo > h3,
+  .summer-img > h3 {
     font-size: 1.5rem; 
   }
-  .fireBall-conteudo > p {
+  .summer-conteudo > p {
     font-size: 1.5rem;  
   }
-  .fireBall-conteudo > a {
+  .summer-conteudo > a {
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 2.5rem;
   }
 }
 @media(max-width: 680px) {
-  .escolhas {
+  .escolhasS {
     top: 10%;
     right: 5%;
     gap: 0.5rem;
   }
-  .fireBall-conteudo > h3,
-  .fireBall-img > h3 {
+  .summer-conteudo > h3,
+  .summer-img > h3 {
     font-size: 1.3rem; 
   }
-  .fireBall-conteudo > p {
+  .summer-conteudo > p {
     font-size: 1.3rem;  
   }
-  .fireBall-conteudo > a {
+  .summer-conteudo > a {
     font-size: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
@@ -173,50 +173,50 @@
 }
 
 @media(max-width: 600px) {
-  .escolhas {
+  .escolhasS {
     top: 30%;
     right: 5%;
     gap: 0.5rem;
   }
-  .fireBall {
+  .summer {
     grid-template-columns: 1fr;
   }
-  .fireBall-conteudo > h3 {
+  .summer-conteudo > h3 {
     display: none;
   }
-  .fireBall-img {
+  .summer-img {
     display: flex;
     flex-direction: column;
   }
-  .fireBall-img img{
+  .summer-img img{
     max-width: 80%;
     align-self: center;
   }
-  .fireBall-img > h3 {
+  .summer-img > h3 {
     font-size: 2rem;
     display: initial;
   }
-  .fireBall > h2 {
+  .summer > h2 {
     grid-column: 1;
   }
-  .fireBall-conteudo {
+  .summer-conteudo {
     grid-row: 3 / 4;
   }
-  .fireBall-conteudo > p {
+  .summer-conteudo > p {
     max-width: 60ch;
   }
-  .fireBall-conteudo > a {
+  .summer-conteudo > a {
    align-self: center;
    border-radius: 0 0 0 0;
    font-size: 2rem;
   }
-  .escolhas > img {
+  .escolhasS > img {
     max-width: 60%;
   }
 }
 @media(max-width: 450px) {
-  .escolhas {
-    top: 20%;
+  .escolhasS {
+    top: 15%;
     right: 5%;
     gap: 0.5rem;
   }

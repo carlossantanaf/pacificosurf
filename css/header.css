@@ -170,18 +170,3 @@ transition: .3s;
     font-size: 1.2rem;
   }
 }
-
-
-
-/* @media(main-aspect-ratio: 16/9) {
-  .video-bg {
-    width: 100%;
-    height: auto;
-  }
-}
-@media(main-aspect-ratio: 16/9) {
-  .video-bg {
-    width: auto;
-    height: 100%;
-  }
-} */
