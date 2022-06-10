@@ -1,0 +1,57 @@
+.footer-bg {
+  background-color: #402A22;
+}
+
+.footer {
+  max-width: 1200px;
+  padding: 3rem;
+  margin: 2rem auto 4rem auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.opcoes {
+display: grid;
+grid-template-columns: 1fr 1fr 2fr;
+gap: 1rem;
+align-items: center;
+justify-items: start;
+
+}
+.opcoes span{
+  font-family: 'Astloch', cursive;
+  color: white;
+  font-size: 2.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media(max-width: 920px) {
+  .opcoes span {
+    font-size: 1.8rem;
+  }
+}
+@media(max-width: 840px) {
+  .opcoes span {
+    font-size: 1.5rem;
+  }
+}
+@media(max-width: 750px) {
+  .opcoes span {
+    font-size: 1.2rem;
+  }
+  .footer img {
+    width: 20%;
+  }
+}
+@media(max-width: 620px) {
+  .opcoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    }
+    .footer {
+      padding: 1rem;
+    }
+}

@@ -63,11 +63,6 @@
 }
 
 @media(max-width: 700px) {
-  .bola:hover {
-    background-color: #402A22;
-    transform:scale3d(0);
-    transition: ease .3s;
-   }
   .clientes-carro {
     width: 500px;
     height: 420px;
@@ -96,7 +91,6 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #402A22;
     cursor: pointer;
   }
   .bola.ativo {
