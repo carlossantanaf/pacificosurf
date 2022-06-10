@@ -2,6 +2,7 @@
   max-width: 1200px;
   margin: 2rem auto 0 auto;
   padding: 2rem;
+
 }
 .clientes-carro {
   display: flex;
@@ -13,12 +14,16 @@
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
   position: relative;
 }
 .clientes-carro img {
   max-width: 100%;
+  display: none;
   transition: ease .3s;
+  
+}
+.clientes-carro img.ativo {
+  display: initial;
 }
 
 .clientes > h2 {

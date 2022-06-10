@@ -1,50 +1,58 @@
 export default function clientes() {
 
-  const quant = document.querySelectorAll('.clientes-carro img')
-  let atual = 0
-  let altura = -616;
-  const bola = document.querySelectorAll('.bola')
-  let rolagem = true
-  bola[0].classList.add('ativo')
-  bola.forEach((item, index) => {
-    item.addEventListener('click', () => {
-      quant[0].style.marginTop = altura*index+'px'
-      bola.forEach((item) => {
-        item.classList.remove('ativo')
-      })
-      item.classList.add('ativo')
-      rolagem = false
-      if(!rolagem) {
-        atual = index
-      }
-      rolagem = false
-    })
-  })
-     setInterval(() => {
-       if(rolagem) {
-      bola.forEach((item) => {
-        item.classList.remove('ativo')
-      })
-      atual++
-      if(atual >= quant.length) {
-        atual=0
+  const imgs = document.querySelectorAll('.clientes-carro img');
+  const bolas = document.querySelectorAll('.bola');
+  imgs[0].classList.add('ativo')
+  bolas[0].classList.add('ativo')
+  let rolar = true
+
+  let i = 1;
+ 
+  setInterval(() => {
+    if(rolar) {
+      bolas[i].click()
+      if(i < bolas.length){
+        i++
       } 
-      quant[0].style.marginTop = altura*atual+'px'
-      bola[atual].classList.add('ativo')
-    } else {
-      rolagem = true
-    }
-    }, 4000)
+      if(i >= bolas.length) {
+        i = 0
+      }
+    } 
+  }, 2000)
 
-    const small = window.matchMedia('(max-width: 700px)');
-    if(small.matches) {
-      altura = -436;
-    }
-    const smallDois = window.matchMedia('(max-width: 550px)');
-    if(smallDois.matches) {
-      altura = -316;
-    }
+  bolas.forEach((bola, index) => {
+    bola.addEventListener('click', () => {
+      i = index
+      rolar = false
+      bolas.forEach((bola) => {
+        bola.classList.remove('ativo')
+      })
+      bola.classList.add('ativo')
+    setTimeout(() => {
+      imgs.forEach((img) => {
+        img.classList.remove('ativo')
+      })
+      imgs[index].classList.add('ativo')
+    }, 200)
+    imgs.forEach((img) => {
+      if(img.classList.contains('ativo')) {
+        img.style.opacity = 0
+      }
+    imgs[index].style.opacity = 1
+    })
+    setTimeout(() => {
+      rolar = true
+    },2000)
 
-  
+    })
+   
+  })
+
+
+
 }
+
+
+
+
 
