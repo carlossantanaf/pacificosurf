@@ -37,15 +37,17 @@ export default function clientes() {
     imgs.forEach((img) => {
       if(img.classList.contains('ativo')) {
         img.style.opacity = 0
+       
       }
     imgs[index].style.opacity = 1
+   
     })
     setTimeout(() => {
       rolar = true
     },2000)
 
     })
-   
+    
   })
 
 

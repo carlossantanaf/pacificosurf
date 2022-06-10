@@ -20,7 +20,7 @@
   max-width: 100%;
   display: none;
   transition: ease .3s;
-  
+ 
 }
 .clientes-carro img.ativo {
   display: initial;
@@ -63,6 +63,11 @@
 }
 
 @media(max-width: 700px) {
+  .bola:hover {
+    background-color: #402A22;
+    transform:scale3d(0);
+    transition: ease .3s;
+   }
   .clientes-carro {
     width: 500px;
     height: 420px;
@@ -77,6 +82,7 @@
   }
 }
 @media(max-width: 550px) {
+ 
   .clientes-carro {
     width: 350px;
     height: 300px;
