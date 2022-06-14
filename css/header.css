@@ -132,6 +132,12 @@ transition: .3s;
   .main-bg {
     margin-top: 100px;
   }
+  .main > p:nth-child(2) {
+    font-size: 2rem;
+  }
+  .main > p:nth-child(3) {
+    font-size: 1.5rem;
+  }
   .menuR {
     position: fixed;
     top: 10000px;

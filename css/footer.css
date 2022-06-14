@@ -5,10 +5,11 @@
 .footer {
   max-width: 1200px;
   padding: 3rem;
-  margin: 2rem auto 4rem auto;
+  margin: 2rem auto 0rem auto;
   display: flex;
   align-items: center;
   gap: 4rem;
+  justify-content: center;
 }
 
 .opcoes {
@@ -16,30 +17,39 @@ display: grid;
 grid-template-columns: 1fr 1fr 2fr;
 gap: 1rem;
 align-items: center;
-justify-items: start;
+justify-items: center;
 
 }
-.opcoes span{
-  font-family: 'Astloch', cursive;
+.opcoes span a{
   color: white;
-  font-size: 2.1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+  text-align: center;
+}
+.opcoes span {
+  text-align: center;
+}
+.opcoes span a {
+  text-decoration: none;
+}
+.opcoes span a:hover {
+  color: #c6c6ca;
 }
 
 @media(max-width: 920px) {
-  .opcoes span {
-    font-size: 1.8rem;
+  .opcoes span a{
+    font-size: 1.3rem;
   }
 }
 @media(max-width: 840px) {
-  .opcoes span {
-    font-size: 1.5rem;
+  .opcoes span a{
+    font-size: 1.1rem;
   }
 }
 @media(max-width: 750px) {
-  .opcoes span {
-    font-size: 1.2rem;
+  .opcoes span a{
+    font-size: 1rem;
   }
   .footer img {
     width: 20%;
