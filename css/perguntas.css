@@ -8,6 +8,7 @@
   background-position: top;
   background-size: contain;
   padding-bottom: 5rem;
+  height: 1000px;
 }
 .perguntas-colum {
   display: flex;
@@ -77,6 +78,7 @@ background-color: #232426;
 @media(max-width: 800px) {
   .perguntas {
     padding-top: 20rem;
+    height: 800px;
   }
   .titulo-perguntas h2{
     font-size: 2.2rem;

@@ -7,6 +7,41 @@
 @import url(./css/perguntas.css);
 @import url(./css/footer.css);
 
+[data-animation="esquerda"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+[data-animation="direita"] {
+  opacity: 0;
+  transform: translate3d(30px, 0, 0);
+  transition: .3s;
+}
+
+[data-animation="topo"] {
+  opacity: 0;
+  transform: translate3d(0, -30px, 0);
+  transition: .3s;
+}
+
+[data-animation="baixo"] {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition: .3s;
+}
+
+[data-animation="centro"] {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  transition: .3s;
+}
+
+[data-animation].animar {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 * {
   margin: 0px;
   padding: 0px;

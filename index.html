@@ -33,6 +33,7 @@
         <img src="./img/menuClosa.svg"  class="close">
       </div>
     </div>
+
     <main class="main-bg">
       <video autoplay loop muted plays-inline class="video-bg">
         <source src="./video/surf.mp4" type="video/mp4">
@@ -49,9 +50,9 @@
     </main>
   </header>
 
-  <section class="stage-dois-bg" >
-    <div class="stage-dois" >
-      <div>
+  <section class="stage-dois-bg">
+    <div class="stage-dois">
+      <div data-animation="esquerda">
         <span >Design incrível</span>
         <h2>
           escolha a prancha com a sua cara, cada uma é única.
@@ -61,22 +62,22 @@
         </p>
         <a href="./">PRANCHA PERSONALIZADA</a>
       </div>
-      <img width="545" height="545" src="./img/pranchas.webp" alt="Pranchas Personalizadas">
+      <img width="545" height="545" src="./img/pranchas.webp" alt="Pranchas Personalizadas" data-animation="direita">
     </div>
   </section>
 
-  <section class="produtos" id="pranchas">
+  <section class="produtos  js-scroll" id="pranchas">
     <article class="fireBall-bg">
       <div class="fireBall"  id="fire">
         <h2>PRANCHAS</h2>
-        <div class="fireBall-conteudo">
+        <div class="fireBall-conteudo" data-animation="esquerda">
           <h3>FireBall</h3>
           <p>
             A FireBall é uma prancha com o foco para atletas intermediário e avançado. Por conta de seu design e ajuste na sua criação, a prancha FireBall não perde velocidade e estabilidade durante as manobras. Uma ótima opção para ondas de todos países.
           </p>
           <a href="./">Encomendar</a>
         </div>
-        <div class="fireBall-img">
+        <div class="fireBall-img" data-animation="baixo">
           <h3>FireBall</h3>
           <img src="./pranchas/firevertical.png" alt="Prancha Fire Ball" class="fireV pran">
           <img src="./pranchas/firedeitada.png" alt="Prancha Fire Ball" class="fireDeitada pran">
@@ -90,14 +91,14 @@
 
     <article class="nuts-bg" id="nuts">
       <div class="nuts">
-        <div class="nuts-conteudo">
+        <div class="nuts-conteudo" data-animation="direita">
           <h3>Nuts</h3>
           <p>
             A Nuts é uma prancha com o foco em conforto e estabilidade, por conta do seu design mais paralelo e compacto. É indicada para todos os níveis de atletas, do iniciante ao avançado. O seu local de de destaque é nas ondas médias/pequenas, por conta de sua maior estabilidade e controle.
           </p>
           <a href="./">Encomendar</a>
         </div>
-        <div class="nuts-img">
+        <div class="nuts-img" data-animation="baixo">
           <h3>Nuts</h3>
           <img src="./pranchas/nutsvertical.png" alt="Prancha Nuts" class="nutsV pran">
           <img src="./pranchas/nutsdeitada.png" alt="Prancha Nuts" class="nutsDeitada pran">
@@ -111,14 +112,14 @@
 
       <article class="summer-bg" id="summer">
       <div class="summer">
-        <div class="summer-conteudo">
+        <div class="summer-conteudo" data-animation="esquerda">
           <h3>Summer Fish</h3>
           <p>
             A Summer Fish é uma remasterização das pranchas antigas, dos anos 70. Porém com um design moderno. Indicada para atletas iniciantes a Summer Fish tem as bordas bem arredondadas e mais flutuação na área do peito, facilitando as entradas nas ondas cheias e fracas.
           </p>
           <a href="./"  id="clientes">Encomendar</a>
         </div>
-        <div class="summer-img">
+        <div class="summer-img" data-animation="baixo">
           <h3>Summer Fish</h3>
           <img src="./pranchas/summervertical.png" alt="Prancha Summer Fish" class="summerV pran">
           <img src="./pranchas/summerdeitada.png" alt="Prancha Summer Fish" class="summerDeitada pran">
@@ -131,8 +132,8 @@
     </article>
   </section>
 
-  <section class="clientes-bg">
-    <div class="clientes">
+  <section class="clientes-bg js-scroll">
+    <div class="clientes" data-animation="centro">
       <h2>CLIENTES</h2>
       <div class="clientes-carro">
         <img src="./clientes/michaelLucas.png" alt="michaelLucas" id="atual">
@@ -154,7 +155,7 @@
     </div>
   </section>
 
-  <section class="perguntas-bg">
+  <section class="perguntas-bg  js-scroll">
     <div class="perguntas" id="duvidas">
       <div class="titulo-perguntas">
         <h2>Perguntas Frequentes</h2>
@@ -163,7 +164,7 @@
       <div class="perguntas-colum ">
         <div class="pergunta-um">
           <div>
-            <div class="retangulo">
+            <div class="retangulo" data-animation="esquerda">
               <h3>As pranchas da Pacífico Surf, são diferentes?</h3>
             </div>
             <p>
@@ -172,7 +173,7 @@
                   </div>
         
                   <div>
-            <div class="retangulo">
+            <div class="retangulo" data-animation="esquerda">
               <h3>Como pedir minha prancha personalizada?</h3>
             </div>
             <p>
@@ -181,7 +182,7 @@
                   </div>
         
                   <div>
-            <div class="retangulo">
+            <div class="retangulo" data-animation="esquerda">
               <h3>As pranchas possuem garantia?</h3>
             </div>
             <p>
@@ -192,7 +193,7 @@
           </div>
         <div class="pergunta-dois">
           <div>
-            <div class="retangulo">
+            <div class="retangulo" data-animation="direita">
               <h3>Quais os métodos de pagamento?</h3>
             </div>
             <p>
@@ -201,7 +202,7 @@
             </p>
           </div>
           <div>
-            <div class="retangulo">
+            <div class="retangulo" data-animation="direita">
               <h3>Quais regiões tem frete gráts?</h3>
             </div>
             <p>
@@ -209,7 +210,7 @@
 
           </div>
           <div>
-            <div class="retangulo">
+            <div class="retangulo" data-animation="direita">
               <h3>Possui lojas físicas?</h3>
             </div>
             <p>
